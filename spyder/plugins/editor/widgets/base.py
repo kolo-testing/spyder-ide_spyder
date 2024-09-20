@@ -438,7 +438,8 @@ class TextEditBaseWidget(
             return
         cursor.movePosition(QTextCursor.PreviousCharacter,
                             QTextCursor.KeepAnchor)
-        text = to_text_string(cursor.selectedText())
+        selected_text = to_text_string(cursor.selectedText()).rstrip()
+QApplication.clipboard().setText(selected_text)
         if text in (')', ']', '}'):
             forward = False
         elif text in ('(', '[', '{'):
@@ -852,7 +853,8 @@ class TextEditBaseWidget(
             return
 
         # ------ Move text
-        sel_text = to_text_string(cursor.selectedText())
+        sel_selected_text = to_text_string(cursor.selectedText()).rstrip()
+QApplication.clipboard().setText(selected_text)
         cursor.removeSelectedText()
 
         if after_current_line:
