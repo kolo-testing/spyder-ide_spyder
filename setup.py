@@ -276,6 +276,7 @@ extras_require = {
         'pytest<8.0',
         'pytest-cov',
         'pytest-docker',
+        'pytest-docker',
         'pytest-lazy-fixture',
         'pytest-mock',
         'pytest-order',
