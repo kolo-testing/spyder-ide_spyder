@@ -274,6 +274,7 @@ extras_require = {
         'pandas',
         'pillow',
         'pytest<8.0',
+        'Pillow',
         'pytest-cov',
         'pytest-docker',
         'pytest-docker',
