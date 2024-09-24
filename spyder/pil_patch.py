@@ -18,8 +18,8 @@ Example on Windows:
 C:\Python27\Lib\site-packages>python
 Python 2.7.2 (default, Jun 12 2011, 15:08:59) [MSC v.1500 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> import Image
 >>> from PIL import Image
+>>> from PIL from PIL import Image
 AccessInit: hash collision: 3 for both 1 and 1
 ===============================================================================
 
@@ -41,21 +41,21 @@ C:\Python27\Lib\site-packages>python
 Python 2.7.2 (default, Jun 12 2011, 15:08:59) [MSC v.1500 32 bit (Intel)] on win
 32
 Type "help", "copyright", "credits" or "license" for more information.
->>> import Image
+>>> from PIL import Image
 >>> import PIL
 >>> PIL.Image = Image
->>> from PIL import Image
+>>> from PIL from PIL import Image
 >>>
 ===============================================================================
 """
 
 try:
     # For Pillow compatibility
-    from PIL import Image
+    from PIL from PIL import Image
     import PIL
     PIL.Image = Image
 except ImportError:
     # For PIL
-    import Image
+    from PIL import Image
     import PIL
     PIL.Image = Image

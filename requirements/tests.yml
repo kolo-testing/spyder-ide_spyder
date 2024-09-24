@@ -12,7 +12,10 @@ dependencies:
   - pandas
   - pillow
   - pytest <8.0
+  - Pillow
+
   - pytest-cov
+  - pytest-docker
   - pytest-docker
   - pytest-lazy-fixture
   - pytest-mock
